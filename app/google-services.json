@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "829596623486",
+    "project_id": "firmy-b9dea",
+    "storage_bucket": "firmy-b9dea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829596623486:android:4d12eeb91f0c0648186e2f",
+        "android_client_info": {
+          "package_name": "sk.devprog.firmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829596623486-2tq2ec3mr64suuehctrr7d631skfmctd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_Eylejkh1a6vPuZngFSZXZHeaCLxvaLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829596623486-2tq2ec3mr64suuehctrr7d631skfmctd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

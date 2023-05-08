@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Firmy</string>
+
+    <!-- Bottom navigation -->
+    <string name="navigation_search">Hľadaj</string>
+    <string name="navigation_favorites">Obľúbené</string>
+    <string name="navigation_more">Viac</string>
+
+    <!-- Search screen -->
+    <string name="search_placeholder">Hladaj názov firmy</string>
+    <string name="search_advanced">Pokročilé hľadanie</string>
+
+    <!-- Search screen - Advanced search -->
+    <string name="search_clear_filter">Vyčisti filter</string>
+    <string name="search_start">Hľadaj</string>
+    <string name="search_form_only_active">Iba aktívne záznamy</string>
+    <string name="search_form_ico">ICO</string>
+    <string name="search_form_legal_form">Právna forma</string>
+    <string name="search_form_legal_status">Právny stav</string>
+    <string name="search_form_municipality">Obec</string>
+    <string name="search_form_street">Ulica</string>
+    <string name="search_form_source_register">Zdrojový register</string>
+    <string name="search_form_main_activity">Hlavná činnosť</string>
+    <string name="search_dialog_options_close">Zatvor</string>
+    <string name="search_dialog_date_select">Vyber dátum</string>
+    <string name="search_dialog_search">Hľadaj</string>
+    <string name="search_form_establishment_date">Dátum založenia</string>
+    <string name="search_form_termination_date">Dátum ukončenia</string>
+    <string name="search_form_stakeholder_name">Meno spoločníka</string>
+    <string name="search_form_stakeholder_surname">Priezvisko spoločníka</string>
+    <string name="search_form_statutory_name">Meno štatutára</string>
+    <string name="search_form_statutory_surname">Priezvisko štatutára</string>
+    <string name="search_no_results">Žiadne výsledky</string>
+    <string name="search_connection_error">Chyba – skontrolujte internetové pripojenie</string>
+
+    <!-- Company result item -->
+    <string name="company_identifier_line">ICO: %1$s</string>
+    <string name="company_establishment_line">Založené: %1$s (%2$s, %3$s)</string>
+    <string name="company_establishment_simple_line">Založené: %1$s</string>
+    <string name="company_termination_line">Zrušené: %1$s (%2$s, %3$s)</string>
+
+    <!-- More screen -->
+    <string name="more_app_title">%1$s v%2$s</string>
+    <string name="more_app_description">Vyhľadávanie právnických osôb, podnikateľov a orgánov verejnej moci.</string>
+    <string name="more_link_licenses">Open source licencie</string>
+    <string name="more_link_github">Github projekt link</string>
+    <string name="more_link_play_store">Play store link</string>
+    <string name="more_license">Zdroje údajov: RPO, RÚZ, Štatistický úrad Slovenskej republiky</string>
+    <string name="more_author">Autor aplikácie: Juraj Novák</string>
+    <string name="more_licenses_title">Licencie</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_empty">Žiadne obľúbené</string>
+
+    <!-- Detail screen -->
+    <string name="detail_ico_label">ICO</string>
+    <string name="detail_name_label">Meno</string>
+    <string name="detail_legal_form_label">Právna forma</string>
+    <string name="detail_address_form_label">Adresa</string>
+    <string name="detail_established_label">Založené</string>
+    <string name="detail_termination_label">Ukončenie</string>
+    <string name="detail_activities_label">Činnosti</string>
+    <string name="detail_main_activity_label">Hlavná činnosť</string>
+    <string name="detail_esa2010_label">ESA2010</string>
+    <string name="detail_source_register">Zdrojový register</string>
+    <string name="detail_register_office">Registračný úrad</string>
+    <string name="detail_register_number">Vložka číslo</string>
+    <string name="detail_authorizations">Oprávnenia</string>
+    <string name="detail_stakeholders">Zainteresované strany</string>
+    <string name="detail_statutory_bodies">Štatutárne orgány</string>
+    <string name="detail_equities">Imanie</string>
+    <string name="detail_deposits">Vklady</string>
+    <string name="detail_other_legal">Iné právne skutočnosti</string>
+    <string name="detail_predecessors">Predchodcovia</string>
+    <string name="detail_successors">Nástupcovia</string>
+    <string name="detail_tab_basic">Základné</string>
+    <string name="detail_tab_activities">Aktivity</string>
+    <string name="detail_tab_people">Ľudia</string>
+    <string name="detail_tab_finances">Financie</string>
+    <string name="detail_tab_other">Iné</string>
+    <string name="detail_remove_add_favorite">Pridať/Odstrániť obľúbené</string>
+    <string name="detail_share">Zdieľať</string>
+    <string name="detail_section_copy_latest">Kopírovať najnovšie</string>
+    <string name="detail_section_copy_all">Kopírovať všetko</string>
+    <string name="detail_section_more_details">Viac detailov</string>
+    <string name="detail_section_actions">Akcie sekcie</string>
+    <string name="detail_equities_base">Základ</string>
+    <string name="detail_equities_paid">Zaplatené</string>
+    <string name="detail_equities_approved">Schválené</string>
+    <string name="detail_dic">DIC</string>
+    <string name="detail_financial_statements">Účtovné uzávierky</string>
+    <string name="detail_link_search_debtor">Overenie v zozname dĺžnikov (zoznam.sk)</string>
+    <string name="detail_link_search_google">Hľadať na internete (google.com)</string>
+
+    <!-- Other -->
+    <plurals name="period_year_format">
+        <item quantity="one">%1$d rok</item>
+        <item quantity="few">%1$d roky</item>
+        <item quantity="many">%1$d rokov</item>
+        <item quantity="other">%1$d rokov</item>
+    </plurals>
+    <plurals name="period_month_format">
+        <item quantity="one">%1$d mesiac</item>
+        <item quantity="few">%1$d mesiace</item>
+        <item quantity="many">%1$d mesiacov</item>
+        <item quantity="other">%1$d mesiacov</item>
+    </plurals>
+
+    <!-- Content description helper texts -->
+    <string name="top_app_bar_back">Späť</string>
+    <string name="textfield_clear">Vymaž text</string>
+</resources>

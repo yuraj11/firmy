@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Firmy</string>
+
+    <!-- Bottom navigation -->
+    <string name="navigation_search">Search</string>
+    <string name="navigation_favorites">Favorites</string>
+    <string name="navigation_more">More</string>
+
+    <!-- Search screen -->
+    <string name="search_placeholder">Search company name</string>
+    <string name="search_advanced">Advanced search</string>
+
+    <!-- Search screen - Advanced search -->
+    <string name="search_clear_filter">Clear filter</string>
+    <string name="search_start">Search</string>
+    <string name="search_form_only_active">Only active entries</string>
+    <string name="search_form_ico">ICO</string>
+    <string name="search_form_legal_form">Legal form</string>
+    <string name="search_form_legal_status">Legal status</string>
+    <string name="search_form_municipality">Municipality</string>
+    <string name="search_form_street">Street</string>
+    <string name="search_form_source_register">Source register</string>
+    <string name="search_form_main_activity">Main activity</string>
+    <string name="search_dialog_options_close">Close</string>
+    <string name="search_dialog_date_select">Select date</string>
+    <string name="search_dialog_search">Search</string>
+    <string name="search_form_establishment_date">Establishment date</string>
+    <string name="search_form_termination_date">Termination date</string>
+    <string name="search_form_stakeholder_name">Stakeholder name</string>
+    <string name="search_form_stakeholder_surname">Stakeholder surname</string>
+    <string name="search_form_statutory_name">Statutory name</string>
+    <string name="search_form_statutory_surname">Statutory surname</string>
+    <string name="search_no_results">No results</string>
+    <string name="search_connection_error">Error - check your internet connection</string>
+
+    <!-- Company result item -->
+    <string name="company_identifier_line">ICO: %1$s</string>
+    <string name="company_establishment_line">Established: %1$s (%2$s, %3$s)</string>
+    <string name="company_establishment_simple_line">Established: %1$s</string>
+    <string name="company_termination_line">Termination: %1$s (%2$s, %3$s)</string>
+
+    <!-- More screen -->
+    <string name="more_app_title">%1$s v%2$s</string>
+    <string name="more_app_description">Search for legal persons, businesses and public authorities.</string>
+    <string name="more_link_licenses">Open source licenses</string>
+    <string name="more_link_github">Github project link</string>
+    <string name="more_link_play_store">Play store link</string>
+    <string name="more_license">Data sources: RPO, RÚZ, Štatistický úrad Slovenskej republiky</string>
+    <string name="more_author">Application author: Juraj Novák</string>
+    <string name="more_licenses_title">Licenses</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_empty">No favorites</string>
+
+    <!-- Detail screen -->
+    <string name="detail_ico_label">ICO</string>
+    <string name="detail_name_label">Name</string>
+    <string name="detail_legal_form_label">Legal form</string>
+    <string name="detail_address_form_label">Address</string>
+    <string name="detail_established_label">Established</string>
+    <string name="detail_termination_label">Termination</string>
+    <string name="detail_activities_label">Activities</string>
+    <string name="detail_main_activity_label">Main activity</string>
+    <string name="detail_esa2010_label">ESA2010</string>
+    <string name="detail_source_register">Source register</string>
+    <string name="detail_register_office">Registration office</string>
+    <string name="detail_register_number">Registration number</string>
+    <string name="detail_authorizations">Authorizations</string>
+    <string name="detail_stakeholders">Stakeholders</string>
+    <string name="detail_statutory_bodies">Statutory bodies</string>
+    <string name="detail_equities">Equities</string>
+    <string name="detail_deposits">Deposits</string>
+    <string name="detail_other_legal">Other legal facts</string>
+    <string name="detail_predecessors">Predecessors</string>
+    <string name="detail_successors">Successors</string>
+    <string name="detail_tab_basic">Basic</string>
+    <string name="detail_tab_activities">Activities</string>
+    <string name="detail_tab_people">People</string>
+    <string name="detail_tab_finances">Finances</string>
+    <string name="detail_tab_other">Other</string>
+    <string name="detail_remove_add_favorite">Add/Remove favorite</string>
+    <string name="detail_share">Share</string>
+    <string name="detail_section_copy_latest">Copy latest</string>
+    <string name="detail_section_copy_all">Copy all</string>
+    <string name="detail_section_more_details">More details</string>
+    <string name="detail_section_actions">Section actions</string>
+    <string name="detail_equities_base">Base</string>
+    <string name="detail_equities_paid">Paid</string>
+    <string name="detail_equities_approved">Approved</string>
+    <string name="detail_dic">DIC</string>
+    <string name="detail_financial_statements">Financial statements</string>
+    <string name="detail_link_search_debtor">Check in debtor list (zoznam.sk)</string>
+    <string name="detail_link_search_google">Search on internet (google.com)</string>
+
+    <!-- Other -->
+    <plurals name="period_year_format">
+        <item quantity="one">%1$d Year</item>
+        <item quantity="other">%1$d Years</item>
+    </plurals>
+    <plurals name="period_month_format">
+        <item quantity="one">%1$d Month</item>
+        <item quantity="other">%1$d Months</item>
+    </plurals>
+
+    <!-- Content description helper texts -->
+    <string name="top_app_bar_back">Back</string>
+    <string name="textfield_clear">Clear text</string>
+</resources>
