@@ -28,10 +28,12 @@ android {
     signingConfigs {
         create("release") {
             val localProperties = gradleLocalProperties(rootDir)
-            storeFile = rootProject.file(localProperties["storeFilePath"] as String)
-            storePassword = localProperties["storePassword"] as String
-            keyPassword = localProperties["keyPassword"] as String
-            keyAlias = localProperties["keyAlias"] as String
+            storeFile = localProperties["storeFilePath"]?.let {
+                rootProject.file(it as String)
+            }
+            storePassword = localProperties["storePassword"] as? String
+            keyPassword = localProperties["keyPassword"] as? String
+            keyAlias = localProperties["keyAlias"] as? String
         }
     }
     buildTypes {
