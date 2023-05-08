@@ -11,7 +11,7 @@ Application utilizes official national APIs for listing entities.
 
 #### Screenshots
 
-<img src="docs/images/screenshot_1.png" alt="Screenshot 1" height="400"> <img src="docs/images/screenshot_2.png" alt="Screenshot 2" height="400">
+<img src="docs/images/screenshot_1.png" alt="Screenshot 1" height="400"> <img src="docs/images/screenshot_2.png" alt="Screenshot 2" height="400"> <img src="docs/images/screenshot_3.png" alt="Screenshot 3" height="400">
 
 #### Architecture highlights
 
