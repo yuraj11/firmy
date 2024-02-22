@@ -8,8 +8,8 @@ import sk.devprog.firmy.ui.screen.licenses.LicensesScreen
 import sk.devprog.firmy.ui.screen.more.MoreScreen
 
 sealed class MoreNavigation(val route: String) {
-    object More : MoreNavigation("more")
-    object Licenses : MoreNavigation("licenses")
+    data object More : MoreNavigation("more")
+    data object Licenses : MoreNavigation("licenses")
 }
 
 fun NavGraphBuilder.moreNavigation(navController: NavController, localUriHandler: UriHandler) {

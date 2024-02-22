@@ -16,4 +16,5 @@ plugins {
     alias(libs.plugins.mikepenz.aboutlibraries) apply false
     alias(libs.plugins.google.gms.services) apply false
     alias(libs.plugins.google.firebase.crashlytics) apply false
+    alias(libs.plugins.google.devtools.ksp) apply false
 }

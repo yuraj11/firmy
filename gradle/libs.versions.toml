@@ -1,26 +1,26 @@
 [versions]
-aboutLibraries = "10.6.3"
-androidGradlePlugin = "8.0.1"
-composeBom = "2023.04.00-alpha03" # Use alpha for DateRangePicker
-composeCompiler = "1.4.7"
-firebaseBom = "32.0.0"
-hilt = "2.46"
+aboutLibraries = "10.10.0"
+androidGradlePlugin = "8.2.2"
+composeBom = "2024.02.01"
+composeCompiler = "1.5.10"
+firebaseBom = "32.7.2"
+hilt = "2.50"
 junit = "4.13.2"
-kotlin = "1.8.21"
-ktor = "2.3.0"
-room = "2.6.0-alpha01"
+kotlin = "1.9.22"
+ksp = "1.9.22-1.0.17"
+ktor = "2.3.8"
+room = "2.6.1"
 
 
 [libraries]
 # Android X core
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.7.1" }
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.10.0" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version = "2.6.1" }
-androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.5.3" }
-androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.0.0" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.8.2" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.12.0" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version = "2.7.0" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.7.7" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.2.0" }
 # Compose
-# androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-androidx-compose-bom = { group = "dev.chrisbanes.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
@@ -31,8 +31,7 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 google-dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 google-dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 # Maps
-google-maps-android-compose = { group = "com.google.maps.android", name = "maps-compose", version = "2.11.4" }
-google-maps-play-services = { group = "com.google.android.gms", name = "play-services-maps", version = "18.1.0" }
+google-maps-android-compose = { group = "com.google.maps.android", name = "maps-compose", version = "4.3.2" }
 # Crashlytics
 google-firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
 google-firebase-crashlytics-ktx = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
@@ -61,9 +60,9 @@ androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espres
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 mikepenz-aboutlibraries = { id = "com.mikepenz.aboutlibraries.plugin", version.ref = "aboutLibraries" }
-google-gms-services = { id = "com.google.gms.google-services", version = "4.3.15" }
-google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version = "2.9.5" }
+google-gms-services = { id = "com.google.gms.google-services", version = "4.4.1" }
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version = "2.9.9" }

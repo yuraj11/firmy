@@ -69,7 +69,9 @@ fun DetailSection(
 
             AnimatedContent(
                 targetState = expanded,
-                transitionSpec = { fadeIn() togetherWith fadeOut() }) {
+                transitionSpec = { fadeIn() togetherWith fadeOut() },
+                label = "Expand item animation"
+            ) {
                 Column(modifier = Modifier.weight(1f)) {
                     if (it) {
                         section.allItems.forEach { item ->

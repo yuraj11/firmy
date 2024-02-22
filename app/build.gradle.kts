@@ -9,17 +9,17 @@ plugins {
     alias(libs.plugins.mikepenz.aboutlibraries)
     alias(libs.plugins.google.gms.services)
     alias(libs.plugins.google.firebase.crashlytics)
-    kotlin("kapt")
+    alias(libs.plugins.google.devtools.ksp)
 }
 
 android {
     namespace = "sk.devprog.firmy"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "sk.devprog.firmy"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 3
         versionName = "1.0.0"
 
@@ -53,15 +53,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
+    }
     kotlinOptions {
         jvmTarget = "17"
     }
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
     }
     packaging {
         resources {
@@ -87,10 +87,9 @@ dependencies {
     implementation(libs.androidx.compose.material3)
 
     implementation(libs.google.dagger.hilt.android)
-    kapt(libs.google.dagger.hilt.android.compiler)
+    ksp(libs.google.dagger.hilt.android.compiler)
 
     implementation(libs.google.maps.android.compose)
-    implementation(libs.google.maps.play.services)
     implementation(platform(libs.google.firebase.bom))
     implementation(libs.google.firebase.crashlytics.ktx)
 
@@ -103,7 +102,7 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     annotationProcessor(libs.androidx.room.compiler)
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
 
     implementation(libs.mikepenz.aboutlibraries.compose)
     implementation(libs.jakewharton.timber)

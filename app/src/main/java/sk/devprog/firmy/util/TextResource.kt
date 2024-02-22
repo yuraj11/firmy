@@ -4,11 +4,13 @@ import android.content.Context
 import androidx.annotation.PluralsRes
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.Immutable
 import androidx.compose.ui.platform.LocalContext
 
 /**
  * Abstracts Android string resource types into single type.
  */
+@Immutable
 sealed interface TextResource {
     data class Raw(val text: String) : TextResource
 

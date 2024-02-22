@@ -12,7 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material.icons.outlined.Share
@@ -105,7 +105,7 @@ fun DetailScreenContent(
             navigationIcon = {
                 IconButton(onClick = onBackClicked) {
                     Icon(
-                        imageVector = Icons.Filled.ArrowBack,
+                        imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                         contentDescription = stringResource(id = R.string.top_app_bar_back)
                     )
                 }
@@ -137,7 +137,6 @@ fun DetailScreenContent(
             } else if (uiState.error != null) {
                 ErrorLayout(error = uiState.error)
             } else if (model != null) {
-                val pagerState = rememberPagerState()
                 val coroutineScope = rememberCoroutineScope()
                 val tabs = buildList {
                     add(TabItem.Basic)
@@ -154,6 +153,7 @@ fun DetailScreenContent(
                         add(TabItem.Other)
                     }
                 }
+                val pagerState = rememberPagerState(pageCount = { tabs.size })
 
                 TabRow(selectedTabIndex = pagerState.currentPage) {
                     tabs.forEachIndexed { index, item ->
@@ -176,7 +176,6 @@ fun DetailScreenContent(
                     }
                 }
                 HorizontalPager(
-                    pageCount = tabs.size,
                     state = pagerState,
                     modifier = Modifier.fillMaxHeight(),
                     verticalAlignment = Alignment.Top
@@ -211,27 +210,27 @@ private sealed class TabItem(
     @get:StringRes val textRes: Int,
     @get:DrawableRes val iconRes: Int,
 ) {
-    object Basic: TabItem(
+    data object Basic: TabItem(
         textRes = R.string.detail_tab_basic,
         iconRes = R.drawable.ic_outline_info
     )
 
-    object Activities: TabItem(
+    data object Activities: TabItem(
         textRes = R.string.detail_tab_activities,
         iconRes = R.drawable.ic_outline_work
     )
 
-    object People: TabItem(
+    data object People: TabItem(
         textRes = R.string.detail_tab_people,
         iconRes = R.drawable.ic_outline_people
     )
 
-    object Finances: TabItem(
+    data object Finances: TabItem(
         textRes = R.string.detail_tab_finances,
         iconRes = R.drawable.ic_outline_attach_money
     )
 
-    object Other: TabItem(
+    data object Other: TabItem(
         textRes = R.string.detail_tab_other,
         iconRes = R.drawable.ic_outline_more_horiz
     )

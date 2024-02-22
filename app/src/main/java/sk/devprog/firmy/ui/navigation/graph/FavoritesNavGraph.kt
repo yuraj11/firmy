@@ -6,7 +6,7 @@ import androidx.navigation.compose.composable
 import sk.devprog.firmy.ui.screen.favorites.FavoritesScreen
 
 sealed class FavoritesNavigation(val route: String) {
-    object Favorites : FavoritesNavigation("favorites")
+    data object Favorites : FavoritesNavigation("favorites")
 }
 
 fun NavGraphBuilder.favoritesNavigation(navController: NavController) {

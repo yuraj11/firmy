@@ -2,7 +2,6 @@ package sk.devprog.firmy.ui.screen.main.widget
 
 import androidx.compose.material3.Badge
 import androidx.compose.material3.BadgedBox
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -24,7 +23,6 @@ import sk.devprog.firmy.ui.navigation.BottomNavigationItem
 import sk.devprog.firmy.ui.navigation.toBottomNavigationItem
 import sk.devprog.firmy.ui.theme.AppTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainBottomNavigation(
     navController: NavHostController,

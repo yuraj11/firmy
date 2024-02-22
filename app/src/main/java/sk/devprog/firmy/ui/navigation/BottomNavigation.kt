@@ -20,21 +20,21 @@ sealed class BottomNavigation(
     val iconNormal: ImageVector,
     val iconSelected: ImageVector
 ) {
-    object Search : BottomNavigation(
+    data object Search : BottomNavigation(
         navigationRoute = SearchNavigation.Search.route,
         titleResId = R.string.navigation_search,
         iconNormal = Icons.Outlined.Search,
         iconSelected = Icons.Filled.Search,
     )
 
-    object Favorites : BottomNavigation(
+    data object Favorites : BottomNavigation(
         navigationRoute = FavoritesNavigation.Favorites.route,
         titleResId = R.string.navigation_favorites,
         iconNormal = Icons.Outlined.FavoriteBorder,
         iconSelected = Icons.Filled.Favorite
     )
 
-    object About : BottomNavigation(
+    data object About : BottomNavigation(
         navigationRoute = MoreNavigation.More.route,
         titleResId = R.string.navigation_more,
         iconNormal = Icons.Outlined.Menu,

@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -73,7 +73,7 @@ fun MoreScreen(
             ) {
                 Text(stringResource(id = R.string.more_link_play_store))
             }
-            Divider(modifier = Modifier.padding(top = 16.dp))
+            HorizontalDivider(modifier = Modifier.padding(top = 16.dp))
             Text(
                 modifier = Modifier.padding(top = 8.dp),
                 text = stringResource(id = R.string.more_license),

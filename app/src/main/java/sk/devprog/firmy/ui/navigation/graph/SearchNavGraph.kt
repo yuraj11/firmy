@@ -11,9 +11,9 @@ import sk.devprog.firmy.ui.screen.detail.DetailScreen
 import sk.devprog.firmy.ui.screen.search.SearchScreen
 
 sealed class SearchNavigation(val route: String) {
-    object Search : SearchNavigation("search")
+    data object Search : SearchNavigation("search")
 
-    object Detail : SearchNavigation("detail/{id}?title={title}") {
+    data object Detail : SearchNavigation("detail/{id}?title={title}") {
         val args = listOf(
             navArgument("id") {
                 type = NavType.IntType

@@ -144,12 +144,12 @@ class DetailScreenViewModel @Inject constructor(
     }
 
     sealed class UiAction {
-        object AddRemoveFavorite : UiAction()
-        object Share : UiAction()
+        data object AddRemoveFavorite : UiAction()
+        data object Share : UiAction()
     }
 
     sealed class Effect {
-        object ShareDetails : Effect()
+        data object ShareDetails : Effect()
     }
 
     data class UiState(

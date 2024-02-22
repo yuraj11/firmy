@@ -81,7 +81,7 @@ class SearchScreenViewModel @Inject constructor(
     sealed class UiAction {
         data class StartSearch(val searchParameters: CompanySearchParameters) : UiAction()
         data class RequestCodeList(val codeListId: String) : UiAction()
-        object ToggleFullSearch : UiAction()
+        data object ToggleFullSearch : UiAction()
     }
 
     data class UiState(
