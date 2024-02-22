@@ -20,8 +20,8 @@ android {
         applicationId = "sk.devprog.firmy"
         minSdk = 26
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.0.0"
+        versionCode = 4
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
