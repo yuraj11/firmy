@@ -7,7 +7,7 @@ Firmy - Android application
 
 Application utilizes official national APIs for listing entities.
 
-<a href="firmy_latest.apk">Download latest APK</a>
+<a href="firmy_latest.apk?raw=true">Download latest APK</a>
 
 #### Screenshots
 
