@@ -7,7 +7,7 @@ Firmy - Android application
 
 Application utilizes official national APIs for listing entities.
 
-<a href="https://play.google.com/store/apps/details?id=sk.devprog.firmy"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Play store link" height="70"></a>
+<a href="firmy_latest.apk">Download latest APK</a>
 
 #### Screenshots
 
