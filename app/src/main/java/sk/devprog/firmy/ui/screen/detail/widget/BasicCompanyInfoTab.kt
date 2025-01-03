@@ -34,8 +34,8 @@ import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.Marker
-import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.rememberCameraPositionState
+import com.google.maps.android.compose.rememberMarkerState
 import sk.devprog.firmy.R
 import sk.devprog.firmy.data.model.MapCoordinates
 import sk.devprog.firmy.ui.screen.detail.model.CompanyDetailItemUiModel
@@ -110,7 +110,7 @@ private fun MapContent(coordinates: MapCoordinates?) {
                 .height(200.dp)
         ) {
             Marker(
-                state = MarkerState(position = latLng)
+                state = rememberMarkerState(position = latLng)
             )
         }
     }

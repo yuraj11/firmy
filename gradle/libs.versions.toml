@@ -1,23 +1,23 @@
 [versions]
 aboutLibraries = "10.10.0"
-androidGradlePlugin = "8.2.2"
-composeBom = "2024.02.01"
+androidGradlePlugin = "8.7.3"
+composeBom = "2024.12.01"
 composeCompiler = "1.5.10"
-firebaseBom = "32.7.2"
-hilt = "2.50"
+firebaseBom = "33.7.0"
+hilt = "2.53.1"
 junit = "4.13.2"
-kotlin = "1.9.22"
-ksp = "1.9.22-1.0.17"
+kotlin = "2.1.0"
+ksp = "2.1.0-1.0.29"
 ktor = "2.3.8"
 room = "2.6.1"
 
 
 [libraries]
 # Android X core
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.8.2" }
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.12.0" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version = "2.7.0" }
-androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.7.7" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.9.3" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.15.0" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version = "2.8.7" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.8.5" }
 androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.2.0" }
 # Compose
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -31,7 +31,7 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 google-dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 google-dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 # Maps
-google-maps-android-compose = { group = "com.google.maps.android", name = "maps-compose", version = "4.3.2" }
+google-maps-android-compose = { group = "com.google.maps.android", name = "maps-compose", version = "6.4.0" }
 # Crashlytics
 google-firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
 google-firebase-crashlytics-ktx = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
@@ -53,8 +53,8 @@ jakewharton-timber = { group = "com.jakewharton.timber", name = "timber", versio
 # Tests
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-compose-ui-test-junit = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version = "1.1.5" }
-androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version = "3.5.1" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version = "1.2.1" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version = "3.6.1" }
 
 
 [plugins]
@@ -64,5 +64,6 @@ google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 mikepenz-aboutlibraries = { id = "com.mikepenz.aboutlibraries.plugin", version.ref = "aboutLibraries" }
-google-gms-services = { id = "com.google.gms.google-services", version = "4.4.1" }
-google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version = "2.9.9" }
+google-gms-services = { id = "com.google.gms.google-services", version = "4.4.2" }
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version = "3.0.2" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

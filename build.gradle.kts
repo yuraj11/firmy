@@ -17,4 +17,5 @@ plugins {
     alias(libs.plugins.google.gms.services) apply false
     alias(libs.plugins.google.firebase.crashlytics) apply false
     alias(libs.plugins.google.devtools.ksp) apply false
+    alias(libs.plugins.compose.compiler) apply false
 }

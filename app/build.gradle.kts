@@ -10,16 +10,17 @@ plugins {
     alias(libs.plugins.google.gms.services)
     alias(libs.plugins.google.firebase.crashlytics)
     alias(libs.plugins.google.devtools.ksp)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
     namespace = "sk.devprog.firmy"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "sk.devprog.firmy"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 4
         versionName = "1.0.1"
 
@@ -27,7 +28,7 @@ android {
     }
     signingConfigs {
         create("release") {
-            val localProperties = gradleLocalProperties(rootDir)
+            val localProperties = gradleLocalProperties(rootDir, providers)
             storeFile = localProperties["storeFilePath"]?.let {
                 rootProject.file(it as String)
             }
@@ -38,11 +39,11 @@ android {
     }
     buildTypes {
         getByName("debug") {
-            val localProperties = gradleLocalProperties(rootDir)
+            val localProperties = gradleLocalProperties(rootDir, providers)
             manifestPlaceholders["mapApiKeyValue"] = localProperties.getProperty("mapsDebugKey").orEmpty()
         }
         getByName("release") {
-            val localProperties = gradleLocalProperties(rootDir)
+            val localProperties = gradleLocalProperties(rootDir, providers)
             manifestPlaceholders["mapApiKeyValue"] = localProperties.getProperty("mapsReleaseKey").orEmpty()
             isDebuggable = false
             signingConfig = signingConfigs.getByName("release")

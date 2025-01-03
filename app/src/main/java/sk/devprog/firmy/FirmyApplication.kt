@@ -26,7 +26,7 @@ class FirmyApplication : Application() {
 
     private fun initializeCrashlytics() {
         val enableCrashlytics = !BuildConfig.DEBUG
-        FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(enableCrashlytics)
+        FirebaseCrashlytics.getInstance().isCrashlyticsCollectionEnabled = enableCrashlytics
         Timber.i("Crashlytics enabled = $enableCrashlytics")
     }
 }
